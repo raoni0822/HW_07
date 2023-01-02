@@ -1,0 +1,227 @@
+* {
+    outline: 1px solid #363;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 50px;
+
+    z-index: 999;
+}
+
+.header .gnv {
+    display: flex;
+    gap: 600px;
+}
+
+.header .gnv h1 {
+    font-size: 0px;
+    line-height: 80px;
+}
+
+.header .gnv ul {
+    display: flex;
+    gap: 150px;
+}
+
+.header .gnv ul>li>a {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 80px;
+}
+
+.page_list ul {
+    position: fixed;
+    top: 50%;
+    right: 100px;
+    transform: translate(0, -50%);
+    z-index: 999;
+
+}
+
+.mainVisual {
+    padding: 0 50px 50px 50px;
+    height: 100vh;
+}
+
+.mainVisual .mainVisualbg {
+    background: url(../img/bacchusd-main-bg.jpg) no-repeat center center/cover;
+    height: 100%;
+}
+
+.mainVisual .inner {
+    width: 1200px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    color: #fff;
+    text-align: center;
+}
+
+.mainVisual .inner .main-page-quote {
+    margin: 0 500px 30px 0;
+}
+
+.mainVisual .inner span {
+    display: block;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 57px;
+    margin: 0 0 30px 0;
+}
+
+.mainVisual .inner p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 30px 400px;
+}
+
+.mainVisual .page_arrow {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+    animation: arrow 0.5s infinite linear;
+}
+
+.mainVisual .page_arrow img {}
+
+@keyframes arrow {
+    from {
+        bottom: 100px;
+    }
+
+    to {
+        bottom: 95px;
+    }
+}
+
+.mainVisual .page_link {
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mainVisual .page_link a {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.mainVisual .page_link i {
+    color: #fff;
+    font-size: 35px;
+}
+
+.mainProduct {}
+
+.mainProduct .inner {
+    display: flex;
+    height: 100vh;
+}
+
+.mainProduct .product_left {
+    position: relative;
+    width: 57%;
+    background: #142147;
+}
+
+
+.mainProduct .product_left img {
+    width: 50%;
+    height: 55%;
+
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.mainProduct .product_right {
+    position: relative;
+    width: 43%;
+    background: #f1f1f1;
+}
+
+.mainProduct .product_right .intro {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    color: #111;
+}
+
+.mainProduct .product_right .intro h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+}
+
+.mainProduct .product_right .intro p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 60px 0;
+    line-height: 25px;
+}
+
+.mainProduct .product_right .intro a {
+    display: inline-block;
+    background: #1616b3;
+    color: #fff;
+    padding: 15px 55px;
+    border-radius: 20px;
+}
+
+.mainProduct .product_right .intro a:hover {
+    color: #1616b3;
+    background: #fff;
+}
+
+.mainIntroduce {
+    padding: 0 50px 50px 50px;
+}
+
+.mainIntroduce .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mainIntroduce .inner figure {
+    position: relative;
+}
+
+.mainIntroduce .inner .desc {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: #fff;
+    text-align: center;
+}
+
+.mainIntroduce .inner .desc h3 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.mainIntroduce .inner .desc p {
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.mainIntroduce .inner .bb {
+    color: #111;
+}
