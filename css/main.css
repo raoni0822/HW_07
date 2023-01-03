@@ -8,7 +8,7 @@
     left: 0;
     right: 0;
     height: 100px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
     border-bottom: 1px solid #ddd;
     padding: 10px 50px;
 
@@ -190,28 +190,14 @@
 }
 
 .mainIntroduce {
-    padding: 0 50px 50px 50px;
+    padding: 0 50px 0 50px;
 }
 
-.mainIntroduce .inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+.mainIntroduce .inner {}
 
-.mainIntroduce .inner figure {
-    position: relative;
-}
 
-.mainIntroduce .inner .desc {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-    color: #fff;
-    text-align: center;
-}
 
-.mainIntroduce .inner .desc h3 {
+/* .mainIntroduce .inner .desc h3 {
     font-size: 45px;
     font-weight: 700;
     margin: 0 0 30px 0;
@@ -224,4 +210,69 @@
 
 .mainIntroduce .inner .bb {
     color: #111;
+} */
+
+.mainAd {
+    padding: 0 50px 0 50px;
+}
+
+.mainAd .top {
+    margin: 0 0 30px 0;
+}
+
+.mainAd .top .video {
+    position: relative;
+}
+
+.mainAd .top .play_btn>a>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.mainAd .bottom {
+    display: flex;
+}
+
+.mainAd .bottom figure {
+    position: relative;
+}
+
+.mainAd .bottom figure .desc {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.mainAd .bottom figure .desc h3 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #111;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.mainAd .bottom figure .desc p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 60px;
+    border-radius: 25px;
+}
+
+.mainAd .bottom figure .desc01 p {
+    background: #160a8b;
+    color: #f1f1f1;
+}
+
+.mainAd .bottom figure .desc02 p {
+    background: #f1f1f1;
+    color: #111;
+}
+
+.mainAd .bottom figure .desc02 h3 {
+    color: #f1f1f1;
 }
