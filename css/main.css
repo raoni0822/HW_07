@@ -189,11 +189,54 @@
     background: #fff;
 }
 
-.mainIntroduce {
-    padding: 0 50px 0 50px;
+.mainIntroduce {}
+
+.mainIntroduce .inner ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 95px 50px 0 50px;
 }
 
-.mainIntroduce .inner {}
+.mainIntroduce .inner .itm01 {
+    height: calc((100vh - 100px) / 2);
+    background: url(../img/list-banner-star.jpg) no-repeat center center/cover;
+}
+
+.mainIntroduce .inner .itm02 {
+    height: calc((100vh - 100px) / 2);
+    background: url(../img/list-banner-honor.jpg) no-repeat center center/cover;
+}
+
+.mainIntroduce .inner .itm03 {
+    height: calc((100vh - 100px) / 2);
+    background: url(../img/list-banner-label.jpg) no-repeat center center/cover;
+}
+
+.mainIntroduce .inner .itm04 {
+    height: calc((100vh - 100px) / 2);
+    background: url(../img/list-banner-bottle.jpg) no-repeat center center/cover;
+}
+
+.mainIntroduce .inner ul>li {
+    text-align: center;
+    color: #fff;
+}
+
+.mainIntroduce .inner ul .itm04 {
+    text-align: center;
+    color: #111;
+}
+
+.mainIntroduce .inner ul>li h3 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 100px 0 30px 0;
+}
+
+.mainIntroduce .inner ul>li p {
+    font-size: 18px;
+    font-weight: 500;
+}
 
 
 
